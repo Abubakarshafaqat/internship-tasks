@@ -1,0 +1,18 @@
+Hypertext transfer protocol (HTTP) is a protocol or set of communication rules for client-server communication. When you visit a website, your browser sends a HTTP request to the web server, which responds with an HTTP response. The web server and your browser exchange data as plaintext. In short, HTTP protocol is the underlying technology that powers network communication. As the name suggests, hypertext transfer protocol secure (HTTPS) is a more secure version or an extension of HTTP. In HTTPS, the browser and server establish a secure, encrypted connection before transferring data.
+HTTP messages are plaintext, which means unauthorized parties can easily access and read them over the internet. In contrast, HTTPS transmits all data in encrypted form. When users submit sensitive data, they can be confident that no third parties can intercept the data over the network. It’s better to choose HTTPS to protect potentially sensitive information like credit card details or customers’ personal information.
+HTTP is an application layer protocol in the Open Systems Interconnection (OSI) network communication model. It defines several types of requests and responses. For example, when you want to view some data from a website, you send the HTTP GET request. If you want to send some information, like filling out a contact form, you send the HTTP PUT request.
+Similarly, the server sends different types of HTTP responses in the form of number codes and data. Here are some examples:
+200 - OK
+400 - Bad request
+404 - Resource not found
+This request-response communication is usually invisible to your users. It’s the communication method that the browser and web servers use, so the World Wide Web works consistently for everyone.
+HTTP transmits unencrypted data, which means that information sent from a browser can be intercepted and read by third parties. This wasn’t an ideal process, so it was extended into HTTPS to add another layer of security to communication. HTTPS combines HTTP requests and responses with SSL and TLS technology.
+
+HTTPS websites must obtain an SSL/TLS certificate from an independent certificate authority (CA). These websites share the certificate with the browser before exchanging data to establish trust. The SSL certificate also contains cryptographic information, so the server and web browsers can exchange encrypted or scrambled data. The process works like this:
+
+You visit an HTTPS website by typing the https:// URL format in your browser’s address bar.
+The browser attempts to verify the site’s authenticity by requesting the server’s SSL certificate.
+The server sends the SSL certificate that contains a public key as a reply.
+The website’s SSL certificate proves the server identity. Once the browser is satisfied, it uses the public key to encrypt and send a message that contains a secret session key.
+The web server uses its private key to decrypt the message and retrieve the session key. It then encrypts the session key and sends an acknowledgment message to the browser.
+Now, both browser and web server switch to using the same session key to exchange messages safely
