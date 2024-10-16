@@ -1,0 +1,4 @@
+/* Style for the input when there's an error */
+.input-error {
+    border: 2px solid red;
+}
